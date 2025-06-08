@@ -24,7 +24,10 @@ public class CalculatorTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             calculator.divide(10, 0);
         });
-        assertEquals("Divide by zero", exception.getMessage());
+       // assertEquals("Divide by zero", exception.getMessage());
+        /** to test the message if it is the same  **/
+        assertEquals("Divide by zero, division", exception.getMessage());
+
     }
     @AfterEach
     void tearDown() {
